@@ -1,0 +1,35 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable type="KIND_SpriteKind" id="dcDvm0=%bC~h+)Xo:%9g">Player</variable><variable type="KIND_SpriteKind" id=")eX`RB:{LX]4n:z9d2yM">Projectile</variable><variable type="KIND_SpriteKind" id="8c?H-hI_pP^IexYtqMK4">Food</variable><variable type="KIND_SpriteKind" id="n}6HVO-q/jbTk;:|h8iV">Enemy</variable><variable id="izD`Bs;i0?P3hq-9E4,Y">mySprite</variable><variable id=":07t~/-XGpkII:sB7[e`">football</variable></variables><block type="pxt-on-start" x="0" y="0"><statement name="HANDLER"><block type="gamesetbackgroundcolor"><value name="color"><shadow type="colorindexpicker"><field name="index">7</field></shadow></value><next><block type="variables_set"><field name="VAR" id="izD`Bs;i0?P3hq-9E4,Y">mySprite</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+. . . . 2 2 2 2 2 e . . . . . . 
+. . . 2 2 2 2 d 2 2 e . . . . . 
+. . e 2 2 2 2 2 2 2 e . . . . . 
+. . e 2 2 2 2 2 2 2 e . . . . . 
+. . e 2 2 2 2 2 e f f c c . . . 
+. . e e 2 2 e f f f f b c . . . 
+. e e e f e 2 b f f f d c . . . 
+e e 2 2 d f 2 1 1 1 1 b c . . . 
+e e 2 2 d f e e c c c . . . . . 
+b 1 1 d e 2 2 e e c . . . . . . 
+. f f e 2 2 2 2 e . . . . . . . 
+. . f f d d 2 2 f f d d . . . . 
+. . f f d d e e f f d d . . . . 
+. . . f f f f . . . . . . . . . 
+. . e e e f f f . . . . . . . . 
+. . e e e e f f f . . . . . . . 
+`</field></shadow></value><value name="kind"><shadow type="spritekind"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="game_control_sprite"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="sprite"><block type="variables_get"><field name="VAR" id="izD`Bs;i0?P3hq-9E4,Y">mySprite</field></block></value><next><block type="variables_set"><field name="VAR" id=":07t~/-XGpkII:sB7[e`">football</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . 3 3 3 3 3 . . . . . 
+. . 3 3 3 3 3 3 3 3 3 3 3 . . . 
+. . 3 3 3 3 3 3 3 3 3 3 3 . . . 
+. . . 3 3 3 3 3 3 3 3 3 3 . . . 
+. . . . . 3 3 3 3 3 3 . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field></shadow></value><value name="kind"><shadow type="spritekind"><field name="MEMBER">Projectile</field></shadow></value></block></value></block></next></block></next></block></next></block></statement></block><block type="spritesoverlap" x="10" y="330"><value name="HANDLER_DRAG_PARAM_sprite"><shadow type="argument_reporter_custom"><mutation typename="Sprite"/><field name="VALUE">sprite</field></shadow></value><value name="kind"><shadow type="spritekind"><field name="MEMBER">Player</field></shadow></value><value name="HANDLER_DRAG_PARAM_otherSprite"><shadow type="argument_reporter_custom"><mutation typename="Sprite"/><field name="VALUE">otherSprite</field></shadow></value><value name="otherKind"><shadow type="spritekind"><field name="MEMBER">Projectile</field></shadow></value><statement name="HANDLER"><block type="spritesetpos"><value name="sprite"><block type="variables_get"><field name="VAR" id=":07t~/-XGpkII:sB7[e`">football</field></block></value><value name="x"><shadow type="positionPicker"><field name="index">0</field></shadow><block type="device_random"><value name="min"><shadow type="math_number"><field name="NUM">0</field></shadow></value><value name="limit"><shadow type="math_number"><field name="NUM">160</field></shadow></value></block></value><value name="y"><shadow type="positionPicker"><field name="index">0</field></shadow><block type="device_random"><value name="min"><shadow type="math_number"><field name="NUM">0</field></shadow></value><value name="limit"><shadow type="math_number"><field name="NUM">120</field></shadow></value></block></value><next><block type="hudChangeScoreBy"><value name="value"><shadow type="math_number"><field name="NUM">1</field></shadow></value><next><block type="gamecountdown"><value name="duration"><shadow type="math_number"><field name="NUM">10</field></shadow></value></block></next></block></next></block></statement></block></xml>
